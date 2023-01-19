@@ -59,10 +59,19 @@ body {
   padding: 5rem 0;
 }
 
-.section .title {
+.title {
   font-size: var(--title-size);
   font-weight: 700;
   margin-bottom: 2rem;
+  text-align: center;
+}
+
+.title-dark {
+  color: #000;
+}
+
+.title-light {
+  color: var(--base-white);
 }
 
 /*====  HEADER ============================ */
@@ -424,4 +433,170 @@ margin-bottom: -0.8rem;
   font-size: var(--text-small);
   font-weight: 500;
   border-radius: 15px 0 15px 0;
+}
+
+/*==== PLANOS EMPRESARIAIS ============================ */
+
+#company {
+  height: 720px;
+  max-width: 100vw;
+  background-color: var(--purple-base);
+  position: relative;
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  z-index: 1;
+}
+
+.company h1{
+  z-index: 1;
+}
+
+.plans-company-contend{
+  display: flex;
+  height: 100%;
+}
+
+#img-woman{
+  flex: 1;
+  align-self: center;
+  z-index: 1;
+}
+
+#img-woman img{
+  width: 600px;
+}
+
+.plans-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#banda, #link{
+  height: 220px;
+  background-color: var(--base-white);
+  border: 2px solid var(--gree-base);
+  border-radius: 20px;
+  padding: 1.5rem 2rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#banda-top, #link-top{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+#banda-top h2, #link-top h2{
+  font-size: var(--subtitle-size);
+  font-weight: 800;
+} 
+
+#banda-top a, #link-top a {
+  width: 45px;
+  height: 45px;
+  color: var(--base-color);
+  background-color: var(--gree-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  border-radius: 10px 0 10px 10px;
+  transition: .2s;
+}
+#banda-top a:hover, #link-top a:hover{
+  background-color: var(--purple-base);
+  transition: .2s;
+}
+
+#banda-text, #link-text{
+  font-size: var(--text-big);
+}
+#banda-text span, #link-text span{
+  color: var(--gree-base);
+  font-weight: 500;
+}
+
+#company-bg{
+  position: absolute;
+  max-height: 720px;
+  width: 50vw;
+  max-width: 50vw;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+/*==== CARDS DE BENEFÍCIOS ============================ */
+#benefits{
+  min-height: 700px;
+}
+#cards-benefits{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 3rem;
+  min-height: 500px;
+}
+
+.card-benefits{
+  padding: 1.5rem 2rem;
+  box-shadow: 4px 4px 15px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  height: 110px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--base-white);
+  border-left: 20px solid var(--base-white);
+  transition: .2s;
+}
+
+.card-benefits:hover{
+  border-left: 20px solid var(--purple-base);
+  transition: .2s;
+}
+
+.card-benefits-top{
+  display: flex;
+  align-items: center;
+}
+
+.card-benefits-top span{
+  font-size: 3rem;
+  color: var(--base-white);
+  margin-right: 1rem;
+  padding: 0.8rem;
+  background-color: var(--purple-base);
+  border-radius: 0rem 2.5rem 2.5rem 2.5rem;
+}
+
+.card-benefits-top h2{
+  font-size: var(--text-big);
+  position: relative;
+}
+
+.card-benefits-top h2::before{
+  content: '';
+  width: 50px;
+  height: 3px;
+  background-color: var(--purple-base);
+  display: block;
+  position: absolute;
+  top: 2rem;
+}
+
+.cards-benefits-text{
+  font-size: var(--text-medium2);
 }
