@@ -41,20 +41,29 @@
       </div>
     </header>
     <main>
-      <div id="form">
-        <div id="contact-form">
+      <div id="form" class="section">
+        <div id="contact-form" class="container">
           <h1 class="title">Fale conosco</h1>
           <p>
             Utilize este canal para pedir informações, esclarecer dúvidas e
             solicitar nossos serviços.
           </p>
           <form action="">
-            <input type="text" placeholder="Seu nome" />
-            <input type="email" placeholder="Seu email" />
-            <input type="textarea" />
-            <input type="submit" />
+            <input type="text" id="name" placeholder="Seu nome" />
+            <input type="email" id="email" placeholder="Seu email" />
+            <textarea
+              id="story"
+              placeholder="Describe yourself here..."
+              name="story"
+              rows="5"
+              cols="33"
+            >
+            </textarea>
+            <input type="textarea" id="msg" placeholder="Digite sua mensagem" />
+            <input type="submit" value="Enviar no WhatsApp" />
           </form>
         </div>
+        <img src="assets/images/Ellipse 31.png" alt="" />
       </div>
     </main>
     <script src="main.js"></script>

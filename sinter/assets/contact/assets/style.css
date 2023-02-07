@@ -158,3 +158,50 @@ body {
   background-color: var(--purple-base);
   border-radius: 20px;
 }
+
+/*====  FORM ============================ */
+
+#contact-form{
+  width: 1000px;
+  height: 500px;
+  background-color: var(--base-white);
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.2);
+  padding: 50px 100px;
+}
+
+#contact-form .title {
+  text-align: left;
+  margin-bottom: .5rem;
+}
+
+#contact-form p{
+  font-size: var(--text-small);
+  margin-bottom: 2rem;
+}
+
+#contact-form form {
+  display: flex;
+  flex-direction: column;
+  
+}
+#contact-form form input{
+  outline: none;
+  border: 2px solid var(--purple-base);
+  font-family: 'Montserrat', sans-serif;
+  font-size: var(--text-small);
+}
+
+#contact-form form input::placeholder{
+  color: var(--purple-base);
+}
+
+#contact-form form #name, #contact-form form #email{
+  height: 35px;
+  border-radius: 10px;
+  padding: 0rem 1rem;
+}
+
+#contact-form form #msg {
+  height: 100px;
+}
