@@ -10,6 +10,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="../footer/style.css" />
+
     <title>Sintercom</title>
   </head>
   <body>
@@ -25,19 +27,18 @@
           <!--Itens do menu-->
           <ul id="menu">
             <a href=""><li>Início</li></a>
-            <li id="menu-company"><a href="">Para Empresas</a>
-            <!--Subitens do opção para empresas-->
-            <ul id="subitem">
-              <li><a href="">Banda Larga</a></li>
-              <li><a href="">Link Dedicado</a></li>
+            <li id="menu-company">
+              <a href="">Para Empresas</a>
+              <!--Subitens do opção para empresas-->
+              <ul id="subitem">
+                <li><a href="">Banda Larga</a></li>
+                <li><a href="">Link Dedicado</a></li>
               </ul>
             </li>
             <a href=""><li>Parceria</li></a>
             <a href=""><li>Sobre Nós</li></a>
             <a href=""><li>Contato</li></a>
           </ul>
-
-          
         </nav>
 
         <!--Butão de login-->
@@ -185,11 +186,11 @@
                 <div class="mega">1000 MEGAS</div>
                 <div class="beficities" id="benefi-gold">
                   <ul>
-					<li>- Roteador em comodato</li>
+                    <li>- Roteador em comodato</li>
                     <li>- Carência de 12 meses</li>
                     <li>- 100% Fibra óptica</li>
                     <li>- Sem limites</li>
-                    <li> -Fixo com 100 minutos</li>
+                    <li>-Fixo com 100 minutos</li>
                   </ul>
                 </div>
                 <div class="price">
@@ -200,7 +201,7 @@
             </div>
           </div>
         </div>
-        <div id="plan-contact"> 
+        <div id="plan-contact">
           <h3>Quer mais opções?</h3>
           <a href="https://google.com">Consulte-nos</a>
         </div>
@@ -245,11 +246,11 @@
     </section>
     <section id="benefits">
       <div class="container section">
-      	<h1 class="title title-dark">Por que escolher a Sintercom?</h1>
+        <h1 class="title title-dark">Por que escolher a Sintercom?</h1>
         <div id="cards-benefits">
           <div class="card-benefits">
             <div class="card-benefits-top">
-				<div id="wifi-icon"></div>
+              <div id="wifi-icon"></div>
               <span class="icon-fast"></span>
               <h2>Muita Velocidade</h2>
             </div>
@@ -258,11 +259,11 @@
               operadoras do mundo para garantir que sua experiência de navegação
               seja incrível.
             </div>
-		     </div>
+          </div>
           <div class="card-benefits">
             <div class="card-benefits-top">
-				<div id="wifi-icon"></div>
-                  <span class="icon-suporte-tecnico"></span>
+              <div id="wifi-icon"></div>
+              <span class="icon-suporte-tecnico"></span>
               <h2>Suporte Técnico</h2>
             </div>
             <div class="cards-benefits-text">
@@ -272,8 +273,8 @@
           </div>
           <div class="card-benefits">
             <div class="card-benefits-top">
-				<div id="wifi-icon"></div>
-                <span class="icon-unlimited-storage"></span>
+              <div id="wifi-icon"></div>
+              <span class="icon-unlimited-storage"></span>
               <h2>Sem Limites</h2>
             </div>
             <div class="cards-benefits-text">
@@ -283,9 +284,9 @@
           </div>
           <div class="card-benefits">
             <div class="card-benefits-top">
-				<div id="wifi-icon"></div>
-          <span class="icon-upload-file"></span>
-		   <h2>Super Upload</h2>
+              <div id="wifi-icon"></div>
+              <span class="icon-upload-file"></span>
+              <h2>Super Upload</h2>
             </div>
             <div class="cards-benefits-text">
               Temos a maior taxa de upload para enviar seus arquivos com mais
@@ -399,50 +400,14 @@
         </div>
       </div>
     </section>
-    <footer id="footer">
-      <img id="elipse-footer" src="../assets/elipse/Ellipse 26.png" alt="" />
-      <div class="footer">
-        <div class="container">
-          <div id="info-footer">
-            <div id="contact-footer">
-              <h2>Fale Conosco</h2>
-              <div class="ctt" id="phone">
-                <span class="icon-phone-call"></span>
-                <p>(21) 3794-4677</p>
-              </div>
-              <div class="ctt id="wpp">
-                <span class="icon-whatsapp"></span>
-                <p>(21) 99670-7806</p>
-              </div>
-              <div class="ctt id="adress">
-                <span class="icon-location"></span>
-                <p>Palhada, 2346 – 1 – Comendador Soares, Nova Iguaçu – RJ</p>
-              </div>
-            </div>
-            <div id="enjoy">
-              <h2>Aproveite</h2>
-              <ul>
-                <li>Nossos Planos</li>
-                <li>Assine Agora</li>
-                <li>Para Empresas</li>
-              </ul>
-            </div>
-            <div id="sintercom-info">
-              <div id="footer-logo">
-                <img src="assets/image/logos/sintercom-logo-v2.png" alt="" />
-              </div>
-              <ul>
-                <li>© 2023 - Sintercom Fibra LTDA</li>
-                <li>Todos os direitos reservados.</li>
-                <li>CNPJ : 00000000000000</li>
-              </ul>
-            </div>
-          </div>
-          <div id="copy">Desenvolvido por: KOLAB dev team</div>
-        </div>
-      </div>
+    <footer>
+      <iframe
+        src="../footer/index.html"
+        onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"
+      ></iframe>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/htmlincludejs"></script>
   </body>
 </html>
