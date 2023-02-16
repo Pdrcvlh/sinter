@@ -80,7 +80,7 @@ body {
 
 /**** Logo ****/
 #logo-head img{
-	width: 50%;
+	width: 60%;
 	}
 
 
@@ -170,15 +170,79 @@ body {
 #login {
   justify-self: end;
 }
-
-#login a{
+#login a p{
+  color: var(--base-white);
+}
+#login a p, #login a span{
   color: var(--base-white);
   font-size: var(--text-small);
   padding: 0.6rem 0.8rem;
   background-color: var(--purple-base);
   border-radius: 20px;
+  border: 2px solid var(--purple-base);
+  transition: .2s;
+}
+
+#login a p:hover, #login a span:hover{
+  background-color: var(--base-white);
+  border: 2px solid var(--purple-base);
+  color: var(--purple-base);
+  transition: .2s;
 }
 
 #menu-mobile, .icon-user, #info-mobile{
   display: none;
+}
+
+@media (max-width: 1190px) {
+  .container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+
+  #header .container{
+    grid-template-columns: 7fr 1fr 1fr;
+    grid-template-areas: "logo login mmobile";
+  }
+
+  /**** logo ****/
+  #logo-head img{
+    width: 200px;
+    }
+  
+  /**** login ****/
+  #login a p{
+    display: none;
+  }
+
+  #login {
+    grid-area: login;
+  }
+
+  #login a span{
+    background-color: rgba(255, 222, 173, 0);
+    border: 0px;
+    display: block;
+    color: var(--purple-base);
+    font-size: 1.8rem;
+  }
+
+  /**** menu ****/
+  #menu {
+    display: none;
+  }
+
+  #menu-mobile{
+    font-size: 2.2rem;
+    color: var(--purple-base);
+    display: block;
+    cursor: pointer;
+    grid-area: mmobile;
+    justify-self: right;
+  }
+
+
 }
