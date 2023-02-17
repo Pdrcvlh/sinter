@@ -85,7 +85,7 @@ body {
 
 #elipse-footer{
   min-width: 100vw;
-  margin-top: -10px;
+  margin-bottom: -2px;
 }
 
 .footer{
@@ -123,6 +123,7 @@ body {
 #enjoy ul li{
   margin-bottom: 0.5rem;
   transition: .2s;
+  font-size: var(--text-small);
 }
 
 
@@ -137,10 +138,104 @@ body {
 
 #sintercom-info ul li{
   margin-bottom: 0.3rem;
+  font-size: var(--text-small)
 }
 
 #copy {
+  font-size: var(--text-small);
   text-align: center;
   padding: 0.4rem 0;
   border-top: 1px solid var(--base-white);
+}
+
+@media (max-width: 1190px) {
+  .container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 991px){
+  #info-footer {
+    grid-template-columns: 3fr 1fr 4fr;
+  }
+}
+
+@media (max-width: 741px){
+  #info-footer {
+    padding-top: 1rem;
+    grid-template: 
+    "contact contact enjoy enjoy" 1fr
+    "sinfo sinfo sinfo sinfo" 1fr
+    / 1fr 1fr 1fr 1fr
+  }
+
+  #contact-footer {
+    grid-area: contact;
+  }
+
+  #enjoy {
+   grid-area: enjoy;
+   justify-self: right;
+   text-align: right;
+  }
+
+  #sintercom-info{
+    grid-area: sinfo;
+    justify-self: center;
+    margin-top: 1rem;
+    text-align: center;
+    margin-bottom: .2rem;
+  }
+
+  #sintercom-info ul li {
+    margin-bottom: 0.1rem;
+  }
+
+  #footer-logo img{
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 550px){
+  #info-footer {
+    padding-top: 1rem;
+    grid-template: 
+    "contact" 1fr
+    "enjoy" 1fr
+    "sinfo" 1fr
+    / 1fr
+  }
+
+  #enjoy {
+    justify-self: left;
+    text-align: left;
+    margin-top: 1rem
+   }
+
+   #enjoy ul li{
+    margin-bottom: 0.3rem;
+  }
+  #info-footer h2 {
+    margin-bottom: .5rem;
+  }
+
+  .ctt {
+    margin-right: 5rem;
+  }
+  .ctt span {
+    margin-right: .5rem;
+  }
+
+   :root {
+    
+    --text-big: 1.3rem;
+    --text-small: .9rem;
+}
+}
+
+@media (max-width: 400px){
+  .ctt {
+    margin-right: 3rem;
+  }
 }
